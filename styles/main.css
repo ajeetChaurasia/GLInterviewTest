@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.text-center {
+    text-align: center;
+}
+.bottom-border {
+    border: 2px solid #000;
+    min-width: 60px;
+    margin: 5px auto;
+    width: 60px;
+}
+
+#timecounter {
+    margin: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.border-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    color: #232323;
+}
+
+header {
+    padding: 10px;
+    box-shadow: 0 5px 4px 0 rgba(105, 102, 102, 0.5);
+    background-color: #ffffff;
+}
+
+.form-conatiner {
+    height: 605px;
+    opacity: 0.75;
+    border: solid 1px #990000;
+    background: url(../images/hero-banner.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 100%;
+    padding: 0px 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-left-container {
+    flex: 1 1 60%;
+}
+
+.form-left-container .top-block h3 {
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.form-left-container .top-block h5 {
+    font-family: Roboto;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.form-left-container .bottom-block h5  {
+    font-family: OpenSans;
+    font-size: 19px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+
+.form-left-container .bottom-block button {
+    font-family: OpenSans;
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    border: 0;
+    background: rgba(0,0,0,0.9);
+}
+.form-right-container {
+    flex: 1 1 40%;
+}
+.form-right-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.form-right-container form .input-types {
+    border: 0;
+    padding: 5px;
+    margin: 5px 2px;
+    border-radius: 4px;
+    width: calc(100% - 10px);
+    border: solid 1px #979797;
+}
+
+.form-right-container form .agreement-checkbox {
+    font-size: 12px;
+    color: #2a2828;
+}
+
+.form-right-container form input[type="submit"] {
+    border: 0;
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 4px;
+    width: 100%;
+    border: solid 1px #979797;
+    background-color: #8c1515;
+    color: #fff;
+    width: 120px;
+    
+}
+
+.form-right-container form select {
+    border: 0;
+    padding: 5px;
+    width: 100%;
+    margin: 5px 2px;
+    border-radius: 4px;
+    border: solid 1px #979797;
+}
+
+.why-design-thinking-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.why-design-thinking-container iframe {
+    margin: 0 auto;
+}
+.why-design-thinking-container .card-block {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 100%;
+    margin: 30px 15%;
+
+}
+.why-design-thinking-container .card-block .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 220px;
+    box-shadow: 3px 3px 18px 0 rgba(0, 0, 0, 0.24);
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 14px;
+ }
+
+ .why-design-thinking-container .card-block .cards div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ .why-design-thinking-container .card-block .cards img {
+    width: 64px;
+    margin-bottom: 20px;
+ }
+ 
+
+ .curriculam-snapshot-block {
+    background-color: #e2ddcb;
+    padding: 30px 15%;
+ }
+
+ .curriculam-snapshot-block .description {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: normal;
+    color: #232323;
+ }
+
+
+
+ .collapsible {
+    background-color: #fff;
+    color: #131212;
+    border: 1px solid #232323;
+    border-collapse: collapse;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: rgba(19, 18, 18, 0.3);
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: #232323;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #fff;
+  }
+
+  .content.active {
+      height: auto;
+      max-height: 100%;
+  }
+
+  footer {
+    padding: 20px;
+    background: #8c1515;
+    color: #fff;
+    text-align: center;
+  }
+
+  footer .apply-btn {
+    background-color: #eaab00;
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+  }

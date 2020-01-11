@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Great Learning</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body onscroll="stickyFooter(event)">
+    <header>
+        <img src="images/stanford-gsb-logo.jpg" alt="stanford logo"   width="173px"
+        height="48px" />
+    </header>
+    <div class="form-conatiner">
+        <div class="form-left-container">
+            <div class="top-block">
+                <h3>Design Thinking : From Insights to Viability</h3>
+                <h5>Learn from the pioneers in Design Thinking, and join leaders 
+                    transforming businesses and products in the revolution</h5>
+               </div>
+                <div class="bottom-block">
+                    <h5>Online | 10 weeks | Mentored Learning | Live Faculty Interaction</h5>
+                    <button>Early Admission Fee : USD 3000  
+                    </button>
+                    <div id="timecounter"></div>
+                </div>
+        </div>
+        <div class="form-right-container">
+            <form name="registartionForm">
+                <h3 class="text-center border-header">Get Started Now <span class="bottom-border"></span></h3>
+                <input onblur="checkValidation(event)" class="input-types" type="text" name="fname" placeholder="Name">
+                <input onblur="checkValidation(event)" class="input-types" type="email" name="email" placeholder="Email">
+                <input onblur="checkValidation(event)" class="input-types" type="number" name="mobileNumber" placeholder="Mobile No.">
+                <select onblur="checkValidation(event)" name="Work Experience" required>
+                    <option value="NA">Work Experience</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <input onblur="checkValidation(event)" class="input-types" type="text" name="designation" placeholder="Current Designation">
+                <input onblur="checkValidation(event)" class="input-types" type="text" name="organisation" placeholder="Current Organisation">
+                <select onblur="checkValidation(event)" name="Heighest Educational Qualification" required>
+                    <option value="NA">Heighest Educational Qualification</option>
+                    <option value="M.E/M.Tech">M.E/M.Tech</option>
+                    <option value="B.E/B.Tech">B.E/B.Tech</option>
+                    <option value="HSC">HSC</option>
+                </select>
+                <div  class="agreement-checkbox">
+                    <input onblur="checkValidation(event)" type="checkbox" name="agree" value="i agree" placeholder="Please check this box">I authorize a Great Learning representative to contact me 
+                    about my interest in the program</div>
+                <input type="submit" value="Apply Now" onclick="applyNow()">
+              </form>
+        </div>
+    </div>
+    <div class="why-design-thinking-container">
+        <h3 class="text-center border-header">Why Design Thinking? <span class="bottom-border"></span></h3>
+        <iframe width="424" height="238" src="https://www.youtube.com/embed/pPsem8-u0ds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="card-block">
+            <div class="cards">
+                <div>
+                <img src="images/icon-1.svg" alt="">
+                <p>Design-driven companies have outperformed the S&P Index by 228% over 10 years. </p>
+                </div>
+                <p>(Source: DMI)</p>
+            </div>
+            <div class="cards">
+                <div>
+                    <img src="images/icon-2.svg" alt="">
+                    <p>Design-driven companies have outperformed the S&P Index by 228% over 10 years. </p>
+                    </div>
+                    <p>(Source: DMI)</p>
+            </div>
+            <div class="cards">
+                <div>
+                    <img src="images/icon-3.svg" alt="">
+                    <p>Design-driven companies have outperformed the S&P Index by 228% over 10 years. </p>
+                    </div>
+                    <p>(Source: DMI)</p>
+            </div>
+        </div>
+    </div>
+    <div class="curriculam-snapshot-block">
+        <h3 class="text-center border-header">Curriculum Snapshot <span class="bottom-border"></span></h3>
+        <p class="description">The curriculum covers the entire framework of the design thinking process. Participants build an understanding of the 'user's need' by engaging in empathetic interactions, creating and testing rapid prototypes, and building important building blocks of a business case.</p>
+
+        <div class="collapsible-block">
+            <button class="collapsible" onclick="openBlock(event, 0)">Human-centered Design</button>
+            <div class="content">
+            <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible" onclick="openBlock(event, 1)">Needs Finding</button>
+            <div class="content">
+            <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible" onclick="openBlock(event, 2)">Interviewing and Empathy-Building Techniques</button>
+            <div class="content">
+            <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible" onclick="openBlock(event, 3)">Making sense of Observations and Insights</button>
+            <div class="content">
+            <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible" onclick="openBlock(event, 4)">Defining a Point of View</button>
+            <div class="content">
+            <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="collapsible" onclick="openBlock(event, 5)">Ideation</button>
+            <div class="content">
+            <p>6 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-block">Learn Design Thinking from Stanford GSB
+        <button class="apply-btn" onclick="gotToForm()">Apply Now</button>
+        </div>
+    </footer>
+</body>
+</html>
