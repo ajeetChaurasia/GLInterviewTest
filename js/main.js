@@ -4,7 +4,7 @@ function applyNow() {
 
 function checkValidation(ev){
   console.log(ev);
-  if(ev.currentTarget === 'input') {
+  if(ev.srcElement.nodeName === 'INPUT') {
     if(ev.currentTarget.value=='') {
       alert(ev.currentTarget.placeholder +' cannot be empty');
     }
