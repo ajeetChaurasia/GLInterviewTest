@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .text-center {
     text-align: center;
@@ -23,8 +24,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px;
     color: #232323;
+    font-size: 24px;
+    margin: 20px 0;
 }
 
 header {
@@ -37,7 +39,7 @@ header {
     height: 605px;
     opacity: 0.75;
     border: solid 1px #990000;
-    background: url(../images/hero-banner.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background: url(../images/hero-banner.jpg),#3e3a3b;
     background-blend-mode: overlay;
     display: flex;
     justify-content: space-around;
@@ -53,8 +55,8 @@ header {
 }
 
 .form-left-container .top-block h3 {
-    font-family: Roboto;
-    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -64,7 +66,7 @@ header {
 }
 
 .form-left-container .top-block h5 {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 23px;
     font-weight: normal;
     font-stretch: normal;
@@ -87,7 +89,7 @@ header {
 
 .form-left-container .bottom-block button {
     font-family: OpenSans;
-    font-size: 21px;
+    font-size: 20px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -95,7 +97,7 @@ header {
     letter-spacing: normal;
     color: #ffffff;
     border: 0;
-    background: rgba(0,0,0,0.9);
+    background: #000;
 }
 .form-right-container {
     flex: 1 1 40%;
@@ -103,28 +105,27 @@ header {
 .form-right-container form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 320px;
     background: #fff;
-    padding: 12px;
+    padding: 15px;
     border-radius: 4px;
 }
 
 .form-right-container form .input-types {
-    border: 0;
-    padding: 5px;
+    padding: 10px;
     margin: 5px 2px;
     border-radius: 4px;
-    width: calc(100% - 10px);
     border: solid 1px #979797;
 }
 
 .form-right-container form .agreement-checkbox {
     font-size: 12px;
     color: #2a2828;
+    display: flex;
+    margin: 5px 2px;
 }
 
 .form-right-container form input[type="submit"] {
-    border: 0;
     padding: 5px;
     margin: 5px auto;
     border-radius: 4px;
@@ -137,9 +138,7 @@ header {
 }
 
 .form-right-container form select {
-    border: 0;
-    padding: 5px;
-    width: 100%;
+    padding: 10px;
     margin: 5px 2px;
     border-radius: 4px;
     border: solid 1px #979797;
@@ -156,10 +155,9 @@ header {
 }
 .why-design-thinking-container .card-block {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex: 1 1 100%;
-    margin: 30px 15%;
-
+    margin: 50px 10%;
 }
 .why-design-thinking-container .card-block .cards {
     display: flex;
@@ -190,7 +188,7 @@ header {
  }
 
  .curriculam-snapshot-block .description {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -200,12 +198,15 @@ header {
     color: #232323;
  }
 
-
+.collapsible-block {
+    border-bottom: 1px solid #232323;
+}
 
  .collapsible {
     background-color: #fff;
     color: #131212;
     border: 1px solid #232323;
+    border-bottom: 0;
     border-collapse: collapse;
     cursor: pointer;
     padding: 18px;
@@ -227,8 +228,8 @@ header {
     margin-left: 5px;
   }
   
-  .active:after {
-    content: "\2212";
+  .collapsible.active-panel:after {
+    content: "\2212" !important;
   }
   
   .content {
@@ -242,6 +243,8 @@ header {
   .content.active {
       height: auto;
       max-height: 100%;
+      border: 1px solid #232323;
+      border-bottom: 0;
   }
 
   footer {
@@ -257,4 +260,105 @@ header {
     border-radius: 4px;
     outline: none;
     border: 0;
+  }
+
+  @media (max-width:479px) {
+    .form-conatiner {
+        height: auto;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+      .form-conatiner .form-left-container {
+        flex: 1 1 100%;
+        margin: 5%;
+      }
+      .form-conatiner .form-right-container {
+        flex: 1 1 100%;
+        margin: 5%;
+      }
+      .form-right-container form {
+          width: auto;
+      }
+      .why-design-thinking-container iframe {
+        margin: 0 5%;
+        width: auto;
+      }
+      .why-design-thinking-container .card-block {
+          flex-direction: column;
+      }
+      .why-design-thinking-container .card-block .cards {
+          margin: 20px auto;
+      }
+  }
+
+
+  @media (min-width:480px) and (max-width:599px) {
+    .form-conatiner {
+        height: auto;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+      .form-conatiner .form-left-container {
+        flex: 1 1 100%;
+        margin: 5%;
+      }
+      .form-conatiner .form-right-container {
+        flex: 1 1 100%;
+        margin: 5%;
+      }
+      .form-right-container form {
+          width: auto;
+      }
+      .why-design-thinking-container iframe {
+        margin: 0 5%;
+        width: auto;
+      }
+      .why-design-thinking-container .card-block {
+          flex-direction: column;
+      }
+      .why-design-thinking-container .card-block .cards {
+          margin: 20px auto;
+      }
+  }
+
+  @media (min-width:600px) and (max-width:967px) {
+    .form-conatiner {
+        height: auto;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+    }
+      .form-conatiner .form-left-container {
+        flex: 1 1 100%;
+        margin: 5%;
+      }
+      .form-conatiner .form-right-container {
+        flex: 1 1 100%;
+        margin: 5%;
+      }
+      .form-right-container form {
+          width: auto;
+      }
+    .why-design-thinking-container .card-block {
+        display: flex;
+        justify-content: space-between;
+        flex: 1 1 100%;
+        margin: 50px 5%;
+    }
+      .form-right-container form {
+          width: auto;
+      }
+      .why-design-thinking-container iframe {
+        margin: 0 5%;
+        width: auto;
+      }
+      .why-design-thinking-container .card-block {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .why-design-thinking-container .card-block .cards {
+          margin: 20px 0;
+      }
   }

@@ -22,9 +22,11 @@ function openBlock(ev, idx) {
     var coll = document.getElementsByClassName("collapsible");
     for(i=0; i<coll.length;i++) {
         if(i===idx) {
+            coll[idx].classList.toggle('active-panel');
             coll[idx].nextElementSibling.classList.toggle('active');
         }else {
             if(coll[i].nextElementSibling.classList.contains('active')){
+                coll[i].classList.remove('active-panel')
                 coll[i].nextElementSibling.classList.remove('active');
             }
         }
