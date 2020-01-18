@@ -110,7 +110,10 @@ header {
     padding: 15px;
     border-radius: 4px;
 }
-
+.form-right-container form label {
+  color: red;
+  font-size: 12px;
+}
 .form-right-container form .input-types {
     padding: 10px;
     margin: 5px 2px;
@@ -123,6 +126,13 @@ header {
     color: #2a2828;
     display: flex;
     margin: 5px 2px;
+    position: relative;
+}
+
+.form-right-container form .agreement-checkbox label {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
 }
 
 .form-right-container form input[type="submit"] {

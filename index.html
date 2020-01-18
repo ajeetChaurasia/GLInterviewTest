@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="js/main.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     
 </head>
 <body onscroll="stickyFooter(event)">
@@ -30,29 +33,31 @@
                 </div>
         </div>
         <div class="form-right-container">
-            <form name="registartionForm">
+            <form name="registartionForm" id="registartionForm">
                 <h3 class="text-center border-header">Get Started Now <span class="bottom-border"></span></h3>
-                <input onblur="checkValidation(event)" class="input-types" type="text" name="fname" placeholder="Name">
-                <input onblur="checkValidation(event)" class="input-types" type="email" name="email" placeholder="Email">
-                <input onblur="checkValidation(event)" class="input-types" type="number" name="mobileNumber" placeholder="Mobile No.">
-                <select onblur="checkValidation(event)" name="Work Experience" required>
-                    <option value="NA">Work Experience</option>
+                <input class="input-types" type="text" name="fname" placeholder="Name">
+                <input class="input-types" type="email" name="email" placeholder="Email">
+                <input class="input-types" type="number" name="mobileNumber" placeholder="Mobile No.">
+                <select id="experience" name="experience">
+                    <option value="">Work Experience</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-                <input onblur="checkValidation(event)" class="input-types" type="text" name="designation" placeholder="Current Designation">
-                <input onblur="checkValidation(event)" class="input-types" type="text" name="organisation" placeholder="Current Organisation">
-                <select onblur="checkValidation(event)" name="Heighest Educational Qualification" required>
-                    <option value="NA">Heighest Educational Qualification</option>
+                <input class="input-types" type="text" name="designation" placeholder="Current Designation">
+                <input class="input-types" type="text" name="organisation" placeholder="Current Organisation">
+                <select id="qualification" name="qualification">
+                    <option value="">Heighest Educational Qualification</option>
                     <option value="M.E/M.Tech">M.E/M.Tech</option>
                     <option value="B.E/B.Tech">B.E/B.Tech</option>
                     <option value="HSC">HSC</option>
                 </select>
                 <div  class="agreement-checkbox">
-                    <input onblur="checkValidation(event)" type="checkbox" name="agree" value="i agree" placeholder="Please check this box">I authorize a Great Learning representative to contact me 
+                    <span>
+                    <input type="checkbox" name="agree" value="i agree" placeholder="Please check this box"></span>
+                    I authorize a Great Learning representative to contact me 
                     about my interest in the program</div>
-                <input type="submit" value="Apply Now" onclick="applyNow()">
+                <input type="submit" value="Apply Now" onclick="applyNow(event)">
               </form>
         </div>
     </div>

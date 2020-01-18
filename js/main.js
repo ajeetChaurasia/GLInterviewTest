@@ -1,7 +1,3 @@
-function applyNow() {
-
-}
-
 function checkValidation(ev){
   console.log(ev);
   if(ev.srcElement.nodeName === 'INPUT') {
@@ -34,7 +30,7 @@ function openBlock(ev, idx) {
 }
 
 function stickyFooter(ev) {
-    console.log(ev);
+    // console.log(ev);
     if(ev.currentTarget.scrollY > 380 ) {
        document.querySelector('footer').style.position = 'sticky';
        document.querySelector('footer').style.bottom = 0; 
